@@ -5,6 +5,7 @@ import styled from "styled-components";
 import PropTypes from "prop-types";
 // Components
 import SocialLinks from "./SocialLinks";
+import WhatsAppButton from "./WhatsAppButton";
 
 // #region styled-components
 const StyledFooter = styled.footer`
@@ -49,6 +50,7 @@ const Footer = ({ mode }) => {
       className="d-flex align-items-center justify-content-center p-2"
     >
       <SocialLinks />
+      <WhatsAppButton phoneNumber="85161671911" />
     </StyledFooter>
   );
 };

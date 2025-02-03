@@ -6,7 +6,6 @@ import PropTypes from "prop-types";
 // Icons
 import { Icon } from "@iconify/react";
 // Images
-import Logo from "../images/logo.svg";
 import { Light, Dark } from "../config";
 // Components
 import { useErrorBoundary } from "react-error-boundary";
@@ -62,7 +61,8 @@ const StyledHero = styled.header`
   }
 
   .down-container {
-    height: 10rem;
+    height: 1rem;
+    
   }
 
   @media (prefers-reduced-motion: no-preference) {
@@ -98,6 +98,20 @@ const propTypes = {
   name: PropTypes.string,
 };
 
+const StyledPortfolio = styled.p`
+  font-family: 'Orbitron', sans-serif; // Modern, tech-like font
+  font-size: 2rem;
+  font-weight: 700;
+  color: rgba(255, 255, 255, 0.9);
+  letter-spacing: 15px; // Increased letter spacing for dramatic effect
+  text-transform: uppercase;
+  margin-bottom: 1.5rem;
+  text-shadow: 3px 3px 6px rgba(0, 0, 0, 0.4);
+  background: linear-gradient(45deg, #ffffff, #a0a0a0);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+`;
+
 const Hero = ({ name }) => {
   const { showBoundary } = useErrorBoundary();
 
@@ -106,19 +120,13 @@ const Hero = ({ name }) => {
       <Container>
         <Row className="align-items-center text-center">
           <Col>
-            <h1 className="mb-3 display-3 title">
-              {name === null ? "null" : name}
+            <h1 className="mb-3 display-3 title" style={{ fontFamily: 'Coldiac Free' }}>
+              Hizkia Natanael Richardo
             </h1>
+            <StyledPortfolio>Portfolio</StyledPortfolio>
             <div className="d-flex align-items-center justify-content-center">
               <SocialLinks />
             </div>
-          </Col>
-          <Col className="d-none d-md-block">
-            <img
-              src={Logo}
-              alt="React Logo"
-              className="w-75 mx-auto hero-img"
-            />
           </Col>
         </Row>
         <Row className="align-items-end down-container">

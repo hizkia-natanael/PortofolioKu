@@ -7,6 +7,7 @@ import PropTypes from "prop-types";
 import { Element } from "react-scroll";
 import { Col, Container, Row } from "react-bootstrap";
 import Title from "./Title";
+import Foto from "../images/fotoProfile.jpeg";
 
 // #region styled-components
 const StyledAboutMe = styled.section`
@@ -22,19 +23,22 @@ const StyledAboutMe = styled.section`
 
 // #region component
 const propTypes = {
-  avatar_url: PropTypes.string.isRequired,
   bio: PropTypes.string,
   moreInfo: PropTypes.string,
 };
 
-const AboutMe = ({ avatar_url, bio, moreInfo }) => {
+const AboutMe = ({bio, moreInfo }) => {
   return (
     <Element name={"About"} id="about">
       <StyledAboutMe className="section">
         <Container>
-          <Container className="d-flex justify-content-center">
-            <Title size={"h2"} text={"About Me"} />
-          </Container>
+        <Container className="d-flex justify-content-center">
+          <Title 
+            size={"h2"} 
+            text={"About Me"} 
+            className="custom-title-font" 
+          />
+        </Container>
           <Row className="align-items-center mt-5">
             <Col className="d-flex flex-column text-center">
               <Container>
@@ -44,7 +48,7 @@ const AboutMe = ({ avatar_url, bio, moreInfo }) => {
             </Col>
             <Col className="d-none d-md-block text-center">
               <img
-                src={avatar_url}
+                src={Foto}
                 alt="GitHub Avatar"
                 loading="lazy"
                 className="mx-auto rounded-circle border border-primary-subtle"

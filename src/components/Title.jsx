@@ -32,17 +32,26 @@ const propTypes = {
 };
 
 const Title = ({ size = "h1", text }) => {
+  const styles = {
+    h1: { fontFamily: "Coldiac Free", fontSize: "2.5rem", fontWeight: "bold" },
+    h2: { fontFamily: "Montserrat", fontSize: "2rem", fontWeight: "normal" },
+  };
+
   return (
     <TitleDiv>
+      <style>
+        @import url('https://fonts.cdnfonts.com/css/coldiac-free');
+      </style>
       {size === "h1" ? (
-        <h1 className="title">{text}</h1>
+        <h1 className="title" style={styles.h1}>{text}</h1>
       ) : (
-        <h2 className="title">{text}</h2>
+        <h2 className="title" style={styles.h2}>{text}</h2>
       )}
       <div className="underline" />
     </TitleDiv>
   );
 };
+
 
 Title.propTypes = propTypes;
 // #endregion
