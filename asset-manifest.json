@@ -1,0 +1,22 @@
+{
+  "files": {
+    "main.css": "/hizkia-natanael/PortofolioKu.git/static/css/main.f3612727.css",
+    "main.js": "/hizkia-natanael/PortofolioKu.git/static/js/main.5957ad83.js",
+    "static/media/fotoProfile.jpeg": "/hizkia-natanael/PortofolioKu.git/static/media/fotoProfile.2b480adf2420bdd1a891.jpeg",
+    "static/media/ecotradeLogo.svg": "/hizkia-natanael/PortofolioKu.git/static/media/ecotradeLogo.f1b8bf58d7248c6a50ff35e21bd97437.svg",
+    "static/media/hero-light.jpg": "/hizkia-natanael/PortofolioKu.git/static/media/hero-light.78b77836d8aee4d7d3cb.jpg",
+    "static/media/hero-dark.jpg": "/hizkia-natanael/PortofolioKu.git/static/media/hero-dark.8e43a9919a7a324d459d.jpg",
+    "service-worker.js": "/hizkia-natanael/PortofolioKu.git/service-worker.js",
+    "static/media/findyourplaceLogo.svg": "/hizkia-natanael/PortofolioKu.git/static/media/findyourplaceLogo.43647f880c6489c9542d11e675f09b6a.svg",
+    "static/media/GH.svg": "/hizkia-natanael/PortofolioKu.git/static/media/GH.b9e9a9aa6f05e9dfe5dcb8991bda3e4d.svg",
+    "static/media/defaultNavLogo.svg": "/hizkia-natanael/PortofolioKu.git/static/media/defaultNavLogo.6ce24c58023cc2f8fd88fe9d219db6c6.svg",
+    "static/media/logo.svg": "/hizkia-natanael/PortofolioKu.git/static/media/logo.6ce24c58023cc2f8fd88fe9d219db6c6.svg",
+    "index.html": "/hizkia-natanael/PortofolioKu.git/index.html",
+    "main.f3612727.css.map": "/hizkia-natanael/PortofolioKu.git/static/css/main.f3612727.css.map",
+    "main.5957ad83.js.map": "/hizkia-natanael/PortofolioKu.git/static/js/main.5957ad83.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.f3612727.css",
+    "static/js/main.5957ad83.js"
+  ]
+}
