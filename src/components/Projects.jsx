@@ -63,7 +63,7 @@ const Projects = () => {
                       theme === "light" ? "outline-dark" : "outline-light"
                     }
                   >
-                    All <Icon icon="icomoon-free:github" /> Projects
+                    All Projects <Icon icon="icomoon-free:github" />
                   </Button>
                 </Link>
               </Container>

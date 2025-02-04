@@ -2,14 +2,16 @@ import React from 'react';
 import { Icon } from '@iconify/react';
 import styled from 'styled-components';
 
-// Styled component untuk tombol WhatsApp
-const StyledButton = styled.button`
+// Styled component untuk link WhatsApp
+const StyledLink = styled.a`
   background: transparent;
   border: none;
   cursor: pointer;
   padding: 0;
   color: #353a40;
   transition: color 0.3s ease-in-out;
+  text-decoration: none;
+  display: inline-block;
 
   &:hover {
     color: white;
@@ -17,13 +19,13 @@ const StyledButton = styled.button`
 `;
 
 const WhatsAppButton = ({ phoneNumber }) => {
-  const handleWhatsAppClick = () => {
-    window.open(`https://wa.me/62${phoneNumber}`, '_blank');
-  };
+  const whatsappUrl = `https://wa.me/62${phoneNumber}`;
 
   return (
-    <StyledButton 
-      onClick={handleWhatsAppClick}
+    <StyledLink 
+      href={whatsappUrl}
+      target="_blank"
+      rel="noopener noreferrer"
       aria-label="Contact on WhatsApp"
     >
       <Icon 
@@ -31,7 +33,7 @@ const WhatsAppButton = ({ phoneNumber }) => {
         width={40} 
         height={40} 
       />
-    </StyledButton>
+    </StyledLink>
   );
 };
 
