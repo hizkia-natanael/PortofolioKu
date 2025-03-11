@@ -44,6 +44,16 @@ export const moreInfo =
 */
 export const skillData = [
   {
+    id: 5,
+    skill: <Icon icon="mdi:react" className="display-4" />,
+    name: "ReactJS",
+  },
+  {
+    id: 3,
+    skill: <Icon icon="fa6-brands:js" className="display-4" />,
+    name: "JavaScript",
+  },
+  {
     id: 1,
     skill: <Icon icon="mdi:language-html5" className="display-4" />,
     name: "HTML",
@@ -52,21 +62,6 @@ export const skillData = [
     id: 2,
     skill: <Icon icon="ion:logo-css3" className="display-4" />,
     name: "CSS",
-  },
-  {
-    id: 3,
-    skill: <Icon icon="fa6-brands:js" className="display-4" />,
-    name: "JavaScript",
-  },
-  {
-    id: 4,
-    skill: <Icon icon="ri:bootstrap-fill" className="display-4" />,
-    name: "BootStrap",
-  },  
-  {
-    id: 5,
-    skill: <Icon icon="mdi:react" className="display-4" />,
-    name: "ReactJS",
   },
   {
     id: 15,
@@ -84,9 +79,9 @@ export const skillData = [
     name: "MongoDB",
   },
   {
-    id: 11,
-    skill: <Icon icon="simple-icons:mysql" className="display-4" />,
-    name: "MySQL",
+    id: 4,
+    skill: <Icon icon="ri:bootstrap-fill" className="display-4" />,
+    name: "BootStrap",
   },
   {
     id: 7,
@@ -113,10 +108,25 @@ export const skillData = [
     skill: <Icon icon="simple-icons:canva" className="display-4" />,
     name: "Canva",
   },
+  {
+    id: 15,
+    skill: <Icon icon="simple-icons:wordpress" className="display-4" />,
+    name: "Wordpress",
+  },
+  {
+    id: 11,
+    skill: <Icon icon="simple-icons:mysql" className="display-4" />,
+    name: "MySQL",
+  },
+  {
+    id: 16,
+    skill: <Icon icon="simple-icons:microsoft" className="display-4" />,
+    name: "Microsoft Office",
+  },
 ];
 
 // Resume link (string - "https://YourResumeUrl") - I am using CloudFront to share my resume (https://docs.aws.amazon.com/AmazonCloudFront/latest/DeveloperGuide/Introduction.html)
-export const resume = "https://drive.google.com/file/d/1HVTK74nXn0x1AfSR62KrKKBvqogAojcv/view?usp=sharing";
+export const resume = "https://drive.google.com/file/d/1-jmwmsy4-96wTvzF-o6QW6i-yoXNHIBd/view?usp=sharing";
 
 /* Projects
  ************************************************************** 

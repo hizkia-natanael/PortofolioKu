@@ -21,16 +21,14 @@ const Skills = () => {
             <Title size={"h2"} text={"Skills"} />
           </Container>
           <Row className="mt-3 align-items-center">
-            {skillData.map((skills) => {
-              return (
-                <Col xs={3} key={skills.id} className="my-md-3">
-                  <figure>
-                    {skills.skill}
-                    <figcaption>{skills.name}</figcaption>
-                  </figure>
-                </Col>
-              );
-            })}
+            {skillData.map((skills) => (
+              <Col xs={6} md={4} lg={3} key={skills.id} className="my-md-3">
+                <figure>
+                  {skills.skill}
+                  <figcaption>{skills.name}</figcaption>
+                </figure>
+              </Col>
+            ))}
           </Row>
           {resume && (
             <a href={resume}>
